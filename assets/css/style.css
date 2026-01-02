@@ -345,9 +345,7 @@ header .navbar ul li a:hover {
 /* hero section end */
 
 /* about section starts */
-.about {
-  background: rgb(255, 255, 255);
-}
+
 .about .row {
   display: flex;
   flex-direction: row;
@@ -375,6 +373,13 @@ header .navbar ul li a:hover {
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
+  position: relative;
+  max-width: 900px;
+  margin: 120px auto;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 .about .row .content h3 {
   color: rgb(27, 27, 27);

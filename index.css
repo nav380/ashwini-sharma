@@ -1,0 +1,66 @@
+.about {
+  position: relative;
+}
+
+.about-bubbles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about > *:not(.about-bubbles) {
+  position: relative;
+  z-index: 1;
+}
+
+.about-bubbles .bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(124, 58, 237, 0.18);
+}
+.blob-bg {
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+
+  background: linear-gradient(
+    135deg,
+    #38bdf8,
+    #2563eb,
+    #1e40af
+  );
+
+  border-radius: 
+    62% 38% 55% 45% /
+    48% 65% 35% 52%;
+
+  filter: blur(0px);
+}
+
+/* Optional second blob (remove if not needed) */
+.blob-bg::after {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  bottom: -120px;
+  right: -100px;
+
+  background: linear-gradient(
+    135deg,
+    #60a5fa,
+    #3b82f6
+  );
+
+  border-radius:
+    70% 30% 40% 60% /
+    55% 45% 65% 35%;
+
+  opacity: 0.8;
+}
+
+

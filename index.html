@@ -18,6 +18,10 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Favicon -->
   <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="index.css">
+
+
 </head>
 
 <body oncontextmenu="return false">
@@ -83,40 +87,88 @@
 
 
   <!-- about section starts -->
-  <section class="about" id="about">
-    <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-
-    <div class="row">
-
-      <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+  <section class="about bubble-wrapper" id="about" class="relative p-4 rounded-xl shadow-2xl max-w-xl mx-auto">
+    <div class="container ">
+      <div class="about-bubbles" aria-hidden="true">
+        <span class="bubble b1"></span>
+        <span class="bubble b2"></span>
+        <span class="bubble b3"></span>
+        <span class="bubble b4"></span>
+        <span class="bubble b5"></span>
+        <span class="bubble b6"></span>
+        <span class="bubble b7"></span>
+        <span class="bubble b8"></span>
       </div>
-      <div class="content">
-        <h2>I'm Ashwini sharama</h2>
-        <span class="tag">Senior Director & Head – Capital Markets & Investment Services</span>
 
-        <p>Senior real estate and capital markets professional with 17+ years of experience across investment advisory,
-          capital markets, business development, and transaction execution. Proven expertise in private equity, debt
-          placement, land acquisition, joint ventures, and asset monetization. Strong leadership capabilities with a
-          track record of building high-performing teams and delivering complex transactions across North India. </p>
 
-        <div class="box-container">
-          <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
-          <div class="box">
-            <p><span> email : </span> your@email.com</p>
-            <p><span> place : </span> Gurugram, India</p>
+
+      <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+      <div class="row">
+
+        <div class="image">
+          <img draggable="false" class="tilt" src="./assets/images/profile2.jpg" alt="">
+        </div>
+
+        <div class="tilt" style="
+  position: relative;
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 4px 4px 30px 4px; /* small padding inside blob */
+  color: #e5e7eb;
+  background: linear-gradient(135deg,#38bdf8,#2563eb,#1e40af);
+  border-radius: 60% 40% 60% 40% / 50% 60% 40% 50%;
+  box-shadow: 0 30px 80px rgba(56,189,248,0.35);
+  padding: 80px;
+">
+
+          <!-- Content -->
+          <div style="padding:20px;"> <!-- internal padding for text -->
+            <h2 style="font-size:42px;margin-bottom:10px; font-weight:700; text-transform:uppercase; color:#fff;">
+              I'm Ashwini sharama
+            </h2>
+
+            <span style="
+      display:block;
+      margin-bottom:20px;
+      font-weight:600;
+      font-size:18px;
+      opacity:0.9;
+    ">
+              Senior Director & Head – Capital Markets & Investment Services
+            </span>
+
+            <p style="line-height:1.7;margin-bottom:20px;font-size:14px;">
+              Senior real estate and capital markets professional with 17+ years of experience across
+              investment advisory, capital markets, business development, and transaction execution.
+              Proven expertise in private equity, debt placement, land acquisition, joint ventures,
+              and asset monetization.
+            </p>
+
+            <div style="margin-bottom:20px;">
+              <p><strong>Email:</strong> your@email.com</p>
+              <p><strong>Place:</strong> Gurugram, India</p>
+            </div>
+
+            <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" style="
+         display:inline-block;
+         padding:12px 28px;
+         color:#fff;
+         text-decoration:none;
+         border-radius:30px;
+         background:rgba(255,255,255,0.15);
+         backdrop-filter:blur(10px);
+       ">
+              Visiting Card
+            </a>
           </div>
+
+          <!-- Water drops -->
+
+
         </div>
 
-        <div class="resumebtn">
-          <a href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank"
-            class="btn"><span>Visiting Card</span>
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
+
 
       </div>
     </div>
@@ -246,43 +298,117 @@
   <!-- experience section ends -->
 
   <!-- contact section starts -->
-  <section class="contact" id="contact">
+  <!-- Contact Section -->
+  <section class="py-20 bg-gradient-to-b from-white to-gray-50 w-full ">
+    <div class="max-w-[1200px] mx-auto px-4">
+      <!-- Header -->
+      <div class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">Get In Touch</h2>
+        <div class="w-20 h-1 bg-gradient-to-r from-pink-500 to-purple-600 mx-auto rounded"></div>
+        <p class="text-lg md:text-xl text-gray-500 mt-4 max-w-2xl mx-auto">
+          Your career transformation starts here. Talk to our team today!
+        </p>
+      </div>
 
-    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+      <!-- Equal Height Columns -->
+      <div class="flex flex-col-reverse md:flex-row gap-10 items-stretch">
 
-    <div class="container">
-      <div class="content">
-        <div class="image-box">
-          <img draggable="false" src="./assets/images/contact1.png" alt="">
+
+        <!-- Contact Info -->
+        <div class="md:w-1/2 flex flex-col" data-aos="fade-right">
+          <div class="bg-white p-8 rounded-3xl shadow-xl flex-1 flex flex-col justify-between">
+            <!-- Address -->
+            <div>
+              <h4 class="text-xl font-semibold mb-2 flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-pink-500"></i> Address
+              </h4>
+              <p class="text-gray-600">
+                Plot no.15 Sector 22 Dwarka, New Delhi, Delhi 110075
+              </p>
+            </div>
+
+            <!-- Map -->
+            <div class="mt-6 relative rounded-2xl overflow-hidden shadow-md flex-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.2936101563655!2d77.0494138741654!3d28.560944787330367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1a558d7ae863%3A0x54f312462926f09!2s15%2C%20MBR%20Enclave%2C%20Sector%2022%20Dwarka%2C%20Dwarka%2C%20Delhi%2C%20110077!5e0!3m2!1sen!2sin!4v1752204880505!5m2!1sen!2sin"
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Email & Phone -->
+            <div class="mt-6 space-y-4">
+              <div class="flex items-start gap-4">
+                <i class="fas fa-envelope text-purple-500 text-xl"></i>
+                <div>
+                  <h5 class="font-semibold">Email</h5>
+                  <p class="text-gray-600">support@saviorhires.in</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <i class="fas fa-phone-alt text-indigo-500 text-xl"></i>
+                <div>
+                  <h5 class="font-semibold">Phone</h5>
+                  <p class="text-gray-600">+91-8445734331</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="mt-6">
+              <h4 class="text-lg font-semibold mb-3">Follow Us</h4>
+              <div class="flex gap-3">
+                <a href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white transition">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-purple-500 hover:text-white transition">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-indigo-500 hover:text-white transition">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#"
+                  class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-pink-500 hover:text-white transition">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <form id="contact-form">
 
-          <div class="form-group">
-            <div class="field">
-              <input type="text" name="name" placeholder="Name" required>
-              <i class='fas fa-user'></i>
-            </div>
-            <div class="field">
-              <input type="text" name="email" placeholder="Email" required>
-              <i class='fas fa-envelope'></i>
-            </div>
-            <div class="field">
-              <input type="text" name="phone" placeholder="Phone">
-              <i class='fas fa-phone-alt'></i>
-            </div>
-            <div class="message">
-              <textarea placeholder="Message" name="message" required></textarea>
-              <i class="fas fa-comment-dots"></i>
-            </div>
+        <!-- Contact Form -->
+        <div class="md:w-1/2 flex flex-col" data-aos="fade-left">
+          <div class="bg-white p-8 rounded-3xl shadow-xl flex-1 flex flex-col justify-between">
+            <h3 class="text-3xl font-bold text-gray-800 mb-6">Send a Message</h3>
+            <form id="contact-form" onsubmit="sendemail(event)" class="space-y-4 flex-1 flex flex-col justify-between">
+              <label for="from_name" class="sr-only">Name</label>
+              <input type="text" placeholder="Your Name" required name="from_name"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition" />
+              <label for="reply_to" class="sr-only">Email Address</label>
+              <input type="email" placeholder="Email Address" required name="reply_to"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 transition" />
+              <label for="phone" class="sr-only">Phone Number</label>
+              <input type="tel" placeholder="Phone Number" required name="phone"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition" />
+              <label for="message" class="sr-only">Message</label>
+              <textarea placeholder="Your Message" rows="4" required name="message"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500 transition"></textarea>
+              <button type="submit"
+                class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 rounded-lg hover:scale-105 transition">
+                Send Message <i class="fas fa-paper-plane ml-2"></i>
+              </button>
+            </form>
           </div>
-          <div class="button-area">
-            <button type="submit">
-              Submit <i class="fa fa-paper-plane"></i></button>
-          </div>
-        </form>
+        </div>
+
+
+
       </div>
     </div>
   </section>
+
   <!-- contact section ends -->
 
 
@@ -292,7 +418,7 @@
     <div class="box-container">
 
       <div class="box">
-        <h3>Jigar's Portfolio</h3>
+        <h3>Ashwini Sharma's Portfolio</h3>
         <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
           🚀. Connect with me over live chat!</p>
       </div>
@@ -301,9 +427,7 @@
         <h3>quick links</h3>
         <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
         <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
-        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
         <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
-        <a href="#work"><i class="fas fa-chevron-circle-right"></i> work</a>
         <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
       </div>
 
@@ -325,7 +449,7 @@
     </div>
 
     <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a
-        href="https://www.linkedin.com/in/jigar-sable"> jigar sable</a></h1>
+        href="https://www.linkedin.com/in/jigar-sable"> Ashwini Sharma</a></h1>
 
   </section>
   <!-- footer section ends -->
@@ -364,6 +488,64 @@
   <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
   <script src="./assets/js/script.js"></script>
+  <script>
+    const section = document.querySelector(".about");
+    const bubbles = document.querySelectorAll(".about-bubbles .bubble");
+
+    const bounds = () => section.getBoundingClientRect();
+
+    const colors = [
+      "rgba(124,58,237,0.25)",  // violet
+      "rgba(59,130,246,0.25)",  // blue
+      "rgba(16,185,129,0.25)",  // green
+      "rgba(234,179,8,0.25)",   // yellow
+      "rgba(239,68,68,0.25)",   // red
+      "rgba(236,72,153,0.25)",  // pink
+      "rgba(14,165,233,0.25)",  // sky
+      "rgba(168,85,247,0.25)"   // purple
+    ];
+
+    const balls = [];
+
+    bubbles.forEach((bubble, i) => {
+      const size = 80 + Math.random() * 190;
+
+      bubble.style.width = size + "px";
+      bubble.style.height = size + "px";
+
+      // 🎨 assign different color
+      bubble.style.background = colors[i % colors.length];
+
+      balls.push({
+        el: bubble,
+        x: Math.random() * (bounds().width - size),
+        y: Math.random() * (bounds().height - size),
+        dx: (Math.random() - 0.5) * 1.8,
+        dy: (Math.random() - 0.5) * 1.8,
+        size
+      });
+    });
+
+    function animate() {
+      const { width, height } = bounds();
+
+      balls.forEach(b => {
+        b.x += b.dx;
+        b.y += b.dy;
+
+        if (b.x <= 0 || b.x + b.size >= width) b.dx *= -1;
+        if (b.y <= 0 || b.y + b.size >= height) b.dy *= -1;
+
+        b.el.style.transform = `translate(${b.x}px, ${b.y}px)`;
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+
+
 
 </body>
 
