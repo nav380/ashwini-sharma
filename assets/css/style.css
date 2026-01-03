@@ -109,7 +109,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -117,8 +117,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: #ff0112;
+  border-bottom: 0.2rem solid #ff0130;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -289,7 +289,7 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
+  color: #df2437;
   background-color: #09011b;
   width: 44px;
   height: 44px;
@@ -409,7 +409,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: #ff0101;
 }
 .resumebtn {
   margin-top: 6rem;
@@ -795,7 +795,7 @@ header .navbar ul li a:hover {
   height: 25px;
   right: -17px;
   background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  border: 4px solid #ca2222;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
@@ -814,15 +814,16 @@ header .navbar ul li a:hover {
 /* arrows pointing right */
 .experience .left::before {
   content: " ";
+  color: #f8f8f8;
   height: 0;
   position: absolute;
   top: 22px;
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #f60909;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent #f60909;
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -833,15 +834,15 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #f60909;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #f60909 transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: #f60909;
   position: relative;
   border-radius: 6px;
 }
@@ -873,7 +874,7 @@ header .navbar ul li a:hover {
   border-radius: 0.5em;
   transition: 0.5s;
   color: #fff;
-  background: #2506ad;
+  background: #ad0606;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   text-align: center;
 }
@@ -888,7 +889,7 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .morebtn .btn:hover {
-  background: #1a047e;
+  background: #7e0404;
 }
 .morebtn .btn:hover i {
   transform: translateX(5px);
